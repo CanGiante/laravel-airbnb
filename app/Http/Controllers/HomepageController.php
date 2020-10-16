@@ -37,8 +37,8 @@ class HomepageController extends Controller
     // }
 
     return view('homepage'
-    // , compact('apartmentSponsorships'
-  ));
+    // , compact('apartmentSponsorships')
+);
   }
 
   public function show(Apartment $apartments)
