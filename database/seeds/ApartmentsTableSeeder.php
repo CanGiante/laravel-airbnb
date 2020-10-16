@@ -89,12 +89,14 @@ class ApartmentsTableSeeder extends Seeder
             $new_apartment->lat = $cityArray[$j]['lat'];
             $new_apartment->save();
 
-        }
-        for ($l=0; $l < 2; $l++) {
+            //services (wifi is default)
+            $new_apartment->services()->attach( $services[ 0 ] );
+            $new_apartment->services()->attach( $services[ rand(1, 3) ] );
 
-            $new_apartment->services()->attach( $services[ rand(0, 5) ] );
-
         }
+        
+        $new_apartment->services()->attach( $services[ rand(4, 5) ] );
+
       }
     }
 }
