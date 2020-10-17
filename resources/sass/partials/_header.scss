@@ -1,0 +1,35 @@
+header {
+
+  // whole container
+  .container-fluid > .row > .col {
+    padding: 0px;
+  }
+
+  // fixed navbar
+  .ms_nav {
+    background-color: $red;
+    .container {
+      display: block;
+
+      .navbar-brand {
+        color: $yellow;
+
+      }
+
+      .search_box {
+        text-align: center;
+      }
+
+      #navbarSupportedContent {
+        float: right;
+      }
+    }
+  }
+
+  // jumbo
+  .ms_jumbo {
+    color: $red;
+  }
+
+}
+//end header
