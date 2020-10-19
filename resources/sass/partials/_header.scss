@@ -3,33 +3,105 @@ header {
   // whole container
   .container-fluid > .row > .col {
     padding: 0px;
+
   }
 
   // fixed navbar
   .ms_nav {
-    background-color: $red;
+    // background-color: $body-bg;
+
     .container {
       display: block;
 
+      //col-left
       .navbar-brand {
-        color: $yellow;
+          color: $body-bg;
 
       }
 
-      .search_box {
-        text-align: center;
+      //col-center
+      .search_col {
+          flex-grow: 3;
+
+          .search_box {
+            .search_bar {
+                display: flex;
+                justify-content: center;
+
+                .div_input {
+                  width: 100%;
+
+                  input.search {
+                    width: 100%;
+                    min-width: 200px;
+                    height: 50px;
+                    border: none;
+                    border-radius: 30px;
+                    text-align: center;
+
+                  }
+
+                }
+
+                .div_button {
+                  margin: auto;
+
+                  button.ms_btn {
+                    width: 48px;
+                    height: 48px;
+                    border: none;
+                    border-radius: 50%;
+                    margin-left: -50px;
+
+                  }
+
+                }
+
+            }
+          }
+
       }
 
+      //col-right
       #navbarSupportedContent {
-        float: right;
+
+          float: right;
+
+          a {
+            color: $body-bg;
+            font-size: 0.75em;
+            font-weight: bold;
+            text-transform: uppercase;
+          }
+
+
       }
+
     }
   }
 
+
+
   // jumbo
   .ms_jumbo {
-    color: $red;
+    height: 100vh;
+    background-image: url('../img/jumbo-bg-img.gif');
+    opacity: 0.85;
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position-x: center;
+
+    // .ms_overlay {
+    //   height: 100%;
+    //
+    //   &:hover {
+    //     background-color: rgba(55, 55, 55, 0.55);
+    //   }
+    //
+    // }
   }
+
+
 
 }
 //end header

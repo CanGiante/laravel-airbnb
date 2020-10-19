@@ -5,7 +5,7 @@
       <div class="col">
         <div class="ms_jumbo">
 
-          <h2>jumbotron</h2>
+          {{-- <div class="ms_overlay"></div> --}}
 
         </div>
       </div>
