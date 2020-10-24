@@ -1,5 +1,13 @@
 @extends('layouts.app')
-@section('content')
-  <h1>guest-apartments-show</h1>
 
+@section('main')
+
+  <div class="container">
+    <div class="row">
+      <div class="col">
+        <h1>guest-apartments-show</h1>
+
+      </div>
+    </div>
+  </div>
 @endsection

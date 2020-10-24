@@ -1,9 +1,10 @@
 html {
   font-size: 16px;
   font-weight: 600;
-  color: $body-bg;
+  // color: $body-bg;
   font-family: $font-family-sans-serif;
 }
+
 
 * {
   padding: 0;
@@ -11,22 +12,32 @@ html {
   box-sizing: border-box;
 }
 
-// .site-wrapper {
-//   min-width: $site_min_width;
-// }
+
+.site-wrapper {
+  // min-width: $site_min_width;
+}
+
+
+main {
+  padding-top: $nav_height;
+}
+
 
 a {
   text-decoration: none;
   color: inherit;
 }
 
+
 ul {
   list-style-type: none;
 }
 
-  // @media screen and (max-width: 350px) {
-  //   font-size: 2.5em;
-  // }
+
+// @media screen and (max-width: 350px) {
+//   font-size: 2.5em;
+// }
+
 
 .clearfix::after {
   content: "";

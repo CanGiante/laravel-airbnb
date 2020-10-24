@@ -7,6 +7,8 @@ $font-size-base: 0.9rem;
 $line-height-base: 1.6;
 
 // Colors
+$main_color: rgb(46, 28, 47);
+
 $blue: #3490dc;
 $indigo: #6574cd;
 $purple: #9561e2;
@@ -17,3 +19,13 @@ $yellow: #ffed4a;
 $green: #38c172;
 $teal: #4dc0b5;
 $cyan: #6cb2eb;
+
+// Measures
+$input_search_height: 50px;
+$nav_padding_y: 20px;
+
+$nav_padding_top: calc(#{$nav_padding_y} / 2);
+$nav_padding_bottom: calc(#{$nav_padding_y} / 2);
+
+$nav_height: calc(#{$input_search_height} + #{$nav_padding_y});
+$homepage-search-bar_line-height: 100px;

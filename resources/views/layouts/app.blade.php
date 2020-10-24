@@ -24,6 +24,7 @@
         <header>
 
             @include('../partials/navbar')
+
             @yield('header')
 
         </header>

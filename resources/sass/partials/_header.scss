@@ -8,14 +8,20 @@ header {
 
   // fixed navbar
   .ms_nav {
-    // background-color: $body-bg;
+    background-color: lighten($main_color, 70%);
+    padding-top: $nav_padding_top;
+    padding-bottom: $nav_padding_bottom;
 
     .container {
       display: block;
 
+      .row {
+        height: $input_search_height;
+      }
+
       //col-left
       .navbar-brand {
-          color: $body-bg;
+          color: $main_color;
 
       }
 
@@ -23,42 +29,7 @@ header {
       .search_col {
           flex-grow: 3;
 
-          .search_box {
-            .search_bar {
-                display: flex;
-                justify-content: center;
-
-                .div_input {
-                  width: 100%;
-
-                  input.search {
-                    width: 100%;
-                    min-width: 200px;
-                    height: 50px;
-                    border: none;
-                    border-radius: 30px;
-                    text-align: center;
-
-                  }
-
-                }
-
-                .div_button {
-                  margin: auto;
-
-                  button.ms_btn {
-                    width: 48px;
-                    height: 48px;
-                    border: none;
-                    border-radius: 50%;
-                    margin-left: -50px;
-
-                  }
-
-                }
-
-            }
-          }
+          @include search_box;
 
       }
 
@@ -68,23 +39,32 @@ header {
           float: right;
 
           a {
-            color: $body-bg;
+            color: $main_color;
             font-size: 0.75em;
             font-weight: bold;
             text-transform: uppercase;
           }
 
-
       }
 
     }
   }
+  // end fixed navbar
 
 
 
   // jumbo
   .ms_jumbo {
+
+    @include search_box;
+
     height: 100vh;
+    padding-top: calc(#{$nav_height} + #{$homepage-search-bar_line-height});
+    padding-left: 100px;
+    padding-right: 100px;
+
+    padding-bottom: 100%;
+
     background-image: url('../img/jumbo-bg-img.gif');
     opacity: 0.85;
     background-size: cover;
@@ -99,6 +79,8 @@ header {
     //   }
     //
     // }
+
+
   }
 
 

@@ -7,6 +7,9 @@
 
           {{-- <div class="ms_overlay"></div> --}}
 
+          @include('../partials/input_search')
+
+
         </div>
       </div>
     </div>
@@ -14,7 +17,7 @@
 @endsection
 
 @section('main')
- <b>sponsorizzati</b>
+  <b>sponsorizzati</b>
 @endsection
 
 @section('footer')
