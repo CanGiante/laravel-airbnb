@@ -23,3 +23,11 @@
 @section('footer')
   @include('../partials/footer')
 @endsection
+
+
+<script>
+  window.onscroll = function(window.scroll(100,0))
+  {
+    console.log('scrolling...');
+  };
+</script>
