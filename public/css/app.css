@@ -10947,6 +10947,7 @@ header .ms_nav {
   background-color: #e1cee2;
   padding-top: calc(20px / 2);
   padding-bottom: calc(20px / 2);
+  box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.39) !important;
 }
 
 header .ms_nav .container {
@@ -11011,8 +11012,7 @@ header .ms_jumbo {
   padding-top: calc(calc(50px + 20px) + 100px);
   padding-left: 100px;
   padding-right: 100px;
-  padding-bottom: 100%;
-  background-image: url(/images/jumbo-bg-img.gif?98e771bd048d1404deddb2daaf8809a2);
+  background-image: url(/images/jumbo-bg-img.gif?b0eb9271c6f47e7a63a2c95fce4a3cd5);
   opacity: 0.85;
   background-size: cover;
   background-repeat: no-repeat;

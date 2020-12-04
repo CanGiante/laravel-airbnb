@@ -4,7 +4,7 @@
         {{-- col-left --}}
         <div class="col m-auto">
           <a class="navbar-brand" href="{{ url('/') }}">
-              {{ config('app.name', 'Boolbnb') }}
+              {{ config('app.name', 'Fairbnb') }}
           </a>
           <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="{{ __('Toggle navigation') }}">
               <span class="navbar-toggler-icon"></span>
@@ -14,7 +14,7 @@
         <div class="col m-auto search_col">
 
           @include('../partials/input_search')
-          
+
         </div>
         {{-- col-right --}}
         <div class="col m-auto">

@@ -11,6 +11,7 @@ header {
     background-color: lighten($main_color, 70%);
     padding-top: $nav_padding_top;
     padding-bottom: $nav_padding_bottom;
+    box-shadow: 0 0.125rem 0.25rem rgba(0, 0, 0, 0.39) !important;
 
     .container {
       display: block;
@@ -62,9 +63,6 @@ header {
     padding-top: calc(#{$nav_height} + #{$homepage-search-bar_line-height});
     padding-left: 100px;
     padding-right: 100px;
-
-    padding-bottom: 100%;
-
     background-image: url('../img/jumbo-bg-img.gif');
     opacity: 0.85;
     background-size: cover;
